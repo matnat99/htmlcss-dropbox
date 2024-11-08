@@ -9,3 +9,58 @@
 body{
     font-family: "Open sans", serif;
 }
+
+/* GENERAL */
+
+/* BUTTONS */
+.btn-primary{
+    background-color: #0061FE;
+    padding: 4px 8px;
+    color: #FFFFFF;
+    border: none;
+}
+
+/* HEADER */
+header{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-size: 14px;
+    padding: 20px 10px;
+}
+ .nav-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+ }
+
+.nav-left ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-left ul a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.nav-right ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-right ul a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
