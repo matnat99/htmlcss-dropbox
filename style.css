@@ -10,7 +10,20 @@ body{
     font-family: "Open sans", serif;
 }
 
+h1{
+    font-size: 60px;
+}
+
 /* GENERAL */
+.container-large{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
 /* BUTTONS */
 .btn-primary{
@@ -29,7 +42,11 @@ header{
     color: black;
     font-size: 14px;
     padding: 20px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
+
  .nav-left{
     display: flex;
     flex-direction: row;
@@ -64,3 +81,40 @@ header{
 }
 
 
+/* MAIN */
+.azure{
+    background-color: #B4D0E6;
+    padding-top: 50px;
+}
+
+.hero{
+    display: flex;
+    position: relative;
+    top: 70px;
+}
+
+.hero-left{
+    width: 75%;
+    position: relative;
+}
+
+.hero-left > .btn-primary{
+    display: block;
+    margin: 20px 0;
+    padding: 8px;
+}
+
+.hero-left > i{
+    font-size: 35px;
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+}
+
+.hero-right{
+    flex-grow: 1;
+}
+
+img{
+    max-width: 100%;
+}
