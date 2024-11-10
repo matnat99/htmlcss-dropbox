@@ -14,11 +14,19 @@ body{
 
 h1{
     font-size: 60px;
+    margin-left: 30px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 25px;
 }
 
 .small{
     font-size: 12px;
-    margin-right: 30px;
 }
 
 .smaller{
@@ -29,12 +37,13 @@ h1{
 
 /* GENERAL */
 .container-large{
-    max-width: 1000px;
+    max-width: 1220px;
     margin: 0 auto;
+    padding: 0 40px;
 }
 
 .container{
-    max-width: 820px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -54,14 +63,26 @@ i{
     margin-right: 4px;
 }
 
+img{
+    max-width: 100%;
+}
+
 
 
 /* BUTTONS */
 .btn-primary{
     background-color: #0061FE;
-    padding: 4px 8px;
+    padding: 6px 14px;
     color: #FFFFFF;
     border: none;
+    cursor: pointer;
+}
+
+.btn-secondary{
+    background-color: white;
+    border: 1px solid black;
+    padding: 8px 12px;
+    cursor: pointer;
 }
 
 
@@ -136,8 +157,8 @@ header{
 
 .hero-left > .btn-primary{
     display: block;
-    margin: 20px 0;
-    padding: 8px;
+    margin: 30px 0;
+    padding: 10px;
 }
 
 .hero-left > i{
@@ -151,33 +172,46 @@ header{
     flex-grow: 1;
 }
 
-img{
-    max-width: 100%;
-}
 
 
 /* SECTION 2 */
+.container > input{
+    margin: 50px 0;
+}
+
+.container > .small{
+    margin-right: 30px;
+}
+
 .container-plan{
     display: flex;
-    gap: 40px;
+    gap: 50px;
+    margin-bottom: 50px;
 }
 
 .plan{
     border: 1px solid darkgray;
-    padding: 0 20px;
+    padding: 35px;
     font-size: 14px;
-    min-height: 720px;
+    min-height: 840px;
 }
 
 .container-plan > .plan{
-    flex-grow: 1;
+    width: calc(100% / 3);
 }
 
 .plan-header{
     text-align: center;
     border: 1px solid darkgray;
-    margin-top: 30px;
     padding: 5px;
+}
+
+.plan > h3{
+    margin-bottom: 10px;
+}
+
+.plan > span.block{
+    margin-top: 10px;
 }
 
 .plan ul{
@@ -186,7 +220,7 @@ img{
 }
 
 .plan ul > li{
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .plan ul a{
@@ -208,12 +242,12 @@ hr{
 .plan-bottom{
     border: 1px solid darkgray;
     display: flex;
-    padding: 20px;
-    margin-bottom: 100px;
+    padding: 30px;
+    margin-bottom: 200px;
 }
 
 .plan-bottoml{
-    width: 70%;
+    width: 78%;
 }
 
 .plan-bottomr{
@@ -231,4 +265,23 @@ p.small{
 .plan-bottomr > .btn-primary{
     width: 100%;
     padding: 10px 0;
+}
+
+
+/* SECTION 3 */
+.container-partner{
+    display: flex;
+}
+
+.partner-left{
+    width: 55%;
+}
+
+.partner-right{
+    width: 45%;
+    padding: 50px 70px 0 50px;
+}
+
+.partner-right > p{
+    margin: 15px 0 30px 0;
 }
