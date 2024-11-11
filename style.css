@@ -181,6 +181,7 @@ header{
 /* SECTION 2 */
 .container > input{
     margin: 40px 0;
+    vertical-align: middle;
 }
 
 .container > .small{
